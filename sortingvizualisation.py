@@ -1,6 +1,7 @@
 import pygame as pg
 import random
 import Sort4viz.bubblesort4pygame as bs
+import Sort4viz.mergesort as ms
 
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
@@ -33,7 +34,6 @@ class SortViz(object):
         self.linecolor2 = GREEN
         self.function = function
         self.runc = False
-
 
     def list_gen(self):
         temp_list = []
@@ -98,12 +98,12 @@ class SortViz(object):
             pg.draw.line(self.screen, self.linecolor, (i, self.h), (i, self.h - val), 1)
         pg.display.flip()
 
+
 # s = SortViz(bogo.bogosort)
-# s = SortViz(bs.bubble_sort)
+#s = SortViz(bs.bubble_sort)
 # s = SortViz(ins.qqq)
-#s = SortViz(ins.ollesort)
+# s = SortViz(ins.ollesort)
+s = SortViz(ms.merge_sort)
 
 # Startar game loopen
 s.run()
-
-
