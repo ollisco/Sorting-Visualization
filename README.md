@@ -9,7 +9,7 @@ Sorting Visualization which will sort three times:
 
 ### Clone repo
 - clone git repo and `pip install pygame`
-- python3 run main.py
+- run `python3 run main.py` in the terminal
 
 ### Download windows program
 - This program can be downloaded as a windows executable
